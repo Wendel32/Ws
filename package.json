@@ -1,0 +1,35 @@
+{
+  "name": "intelectua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy": "^0.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "3.1.0",
+    "gulp-minify-css": "1.2.4",
+    "gulp-minify-html": "1.0.6",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp.spritesmith": "^6.9.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.5",
+    "coveo-png-sprite": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-strip-debug": "^2.0.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint-stylish": "^2.2.1"
+  }
+}

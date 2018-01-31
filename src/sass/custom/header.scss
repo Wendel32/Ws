@@ -1,0 +1,45 @@
+@import "color";
+
+.bar{
+    &-top{
+        background-color: $color-primary;
+        width: 100%;        
+        position: relative; 
+        color:white;         
+        padding: 1%;       
+            i, p {
+                display: inline-block;
+                margin: auto 2px auto 5px;
+                
+            }
+            .social-icon{                
+                i{
+                     margin: auto 10px auto 10px;
+                }
+            }
+        }
+        
+    }
+nav{       
+    position: relative;
+    padding: 10px;
+    ul{
+        width: 100%;
+        li{
+            padding: 50px 7px;
+            width: 13.3%;
+            text-align: center;
+
+            &:nth-child(4){
+                padding: 0;
+                width: auto;
+            } 
+        }
+
+
+    }
+}
+
+
+
+
