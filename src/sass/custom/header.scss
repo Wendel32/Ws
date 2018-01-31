@@ -1,45 +1,66 @@
 @import "color";
 
-.bar{
-    &-top{
+.bar {
+    &-top {
         background-color: $color-primary;
-        width: 100%;        
-        position: relative; 
-        color:white;         
-        padding: 1%;       
-            i, p {
-                display: inline-block;
-                margin: auto 2px auto 5px;
-                
-            }
-            .social-icon{                
-                i{
-                     margin: auto 10px auto 10px;
-                }
-            }
-        }
-        
-    }
-nav{       
-    position: relative;
-    padding: 10px;
-    ul{
         width: 100%;
-        li{
-            padding: 50px 7px;
-            width: 13.3%;
-            text-align: center;
+        position: relative;
+        color: $header-font-color;
+        padding: 1%;
 
-            &:nth-child(4){
-                padding: 0;
-                width: auto;
-            } 
+        i, p {
+            display: inline-block;
+            margin: auto 2px auto 5px;
         }
 
-
+        .social-icon {
+            i {
+                margin: auto 10px auto 10px;
+            }
+        }
     }
 }
 
+nav {
+    position: relative;
+    padding: 10px;
 
+    ul {
+        width: 100%;
 
+        li {
+            padding: 50px 5px;
+            width: 14%;
+            text-align: center;
+            font-weight: bold;
+                
+            &:nth-child(4) {
+                padding: 0;
+                width: auto;
+            }
 
+            .btn-default {
+                background-color: lighten($color-primary, 20%);
+                color: $header-font-color;
+                width: 100%;
+                padding: 4%;
+            }
+        }
+    }
+}
+
+.carousel-layout {
+    img {
+        width: 100%;
+    }
+
+    .controls {
+        i {
+            top: 50%;
+            z-index: 9999;
+            position: absolute;
+            color: $header-font-color;
+            left: 50%;
+        }
+    }
+}

@@ -1,9 +1,43 @@
-body{
-    &.castelinho{
+@import "color";
+
+body {
+    &.castelinho {
         font-family: 'Lato', sans-serif;
         font-size: 16px;
     }
-        address{
-            margin: 0;
+
+    address {
+        margin: 0;
+    }
+
+    .navbar-default {
+        border-bottom: 5px solid $color-primary;
+        border-color: $color-primary;
+        border-radius: 0;
+        margin: 0;
+
+        .navbar-nav {
+            li {
+                a {
+                    &:hover, &:active,&:focus {
+                        color: $color-primary;
+                    }
+                }
+            }
         }
+    }
+
+    .carousel-indicators {
+        li {
+            background-color: white;
+
+            &.active {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .carousel-control {
+        width: 30%;
+    }
 }
