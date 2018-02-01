@@ -11,8 +11,8 @@ body {
     }
 
     .navbar-default {
-        border-bottom: 5px solid $color-primary;
-        border-color: $color-primary;
+        border-bottom: 5px solid $first-color;
+        border-color: $first-color;
         border-radius: 0;
         margin: 0;
 
@@ -20,7 +20,7 @@ body {
             li {
                 a {
                     &:hover, &:active,&:focus {
-                        color: $color-primary;
+                        color: $first-color;
                     }
                 }
             }
@@ -32,7 +32,7 @@ body {
             background-color: white;
 
             &.active {
-                background-color: $color-primary;
+                background-color: $first-color;
             }
         }
     }

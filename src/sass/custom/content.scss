@@ -1,0 +1,74 @@
+@import "color";
+
+.turmas{
+     background-image: url("../images/bg-turmas.png");
+     width: 100%;
+    h2{
+        &:first-child{
+            margin: 5% 0;
+        }
+        color:$first-color;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cardapio{
+        margin:0 35%;
+        width: 30%;
+        background-color:lighten($first-color,20%);
+    
+         i{
+            margin-left:10%;
+        }
+    }
+
+    
+    .thumbnail{
+        background-color: transparent;
+        border: 0;
+        padding: 4px 75px ;
+           p{
+               color:#777;
+           }
+           i{
+               margin-left: 10%;
+           }
+           a{
+               width: 75%;
+           }
+
+        .icon-center{
+            margin: 0 20%;
+        }
+     
+    }
+    .colorize-1{
+        h3{
+            color:lighten($first-color,20%); 
+        }
+        a{
+            background-color:lighten($first-color,20%);
+            border:0;
+            
+        }
+    }
+    .colorize-2{
+        h3{
+            color:$second-color; 
+        }
+        a{
+            background-color:$second-color;
+            border:0;
+        }
+    }
+    .colorize-3{
+        h3{
+            color:$third-color; 
+        }
+        a{
+            background-color:$third-color;
+            border:0;
+        }
+    }
+
+}
+

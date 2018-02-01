@@ -2,7 +2,7 @@
 
 .bar {
     &-top {
-        background-color: $color-primary;
+        background-color: $first-color;
         width: 100%;
         position: relative;
         color: $header-font-color;
@@ -40,7 +40,7 @@ nav {
             }
 
             .btn-default {
-                background-color: lighten($color-primary, 20%);
+                background-color: lighten($first-color, 20%);
                 color: $header-font-color;
                 width: 100%;
                 padding: 4%;
@@ -50,6 +50,22 @@ nav {
 }
 
 .carousel-layout {
+    .jumbotron{
+        z-index: 99999;
+        position: absolute;
+        background: transparent;
+        color:$header-font-color;
+        left:29%;
+        right: 29%;
+        width: 42%;
+        margin-top:7%;
+            p{
+                font-size: 16px;
+            }
+            a{
+                background-color: lighten($first-color, 20%);
+            }
+    }
     img {
         width: 100%;
     }
