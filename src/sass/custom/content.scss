@@ -1,200 +1,308 @@
 @import "color";
 
-.turmas{
-     background-image: url("../images/bg-turmas.png");
-     width: 100%;
-     padding-bottom:20px;
-     .container{
-         padding: 2%;
-     }
-    h2{
-        &:first-child{
+.turmas {
+    background-image: url("../images/bg-turmas.png");
+    width: 100%;
+    padding-bottom: 20px;
+
+    .container {
+        padding: 2%;
+    }
+
+    h2 {
+        &:first-child {
             margin: 2% 0;
         }
-        color:$first-color;
+
+        color: $first-color;
         text-align: center;
         font-weight: bold;
     }
-    .cardapio{
-        margin:0 35%;
+
+    .cardapio {
+        margin: 0 35%;
         width: 30%;
-        background-color:lighten($first-color,20%);
-    
-         i{
-            margin-left:10%;
+        background-color: lighten($first-color, 20%);
+
+        i {
+            margin-left: 10%;
         }
     }
 
-    
-    .thumbnail{
+    .thumbnail {
         background-color: transparent;
         border: 0;
-        padding: 4px 75px ;
-           p{
-               color:#777;
-           }
-           i{
-               margin-left: 10%;
-           }
-           a{
-               width: 75%;
-           }
+        padding: 4px 75px;
 
-        .icon-center{
+        p {
+            color: #777;
+        }
+
+        i {
+            margin-left: 10%;
+        }
+
+        a {
+            width: 75%;
+        }
+
+        .icon-center {
             margin: 0 20%;
         }
-     
     }
-    .colorize-1{
-        h3{
-            color:lighten($first-color,20%); 
+
+    .colorize-1 {
+        h3 {
+            color: lighten($first-color, 20%);
         }
-        a{
-            background-color:lighten($first-color,20%);
-            border:0;
-            
-        }
-    }
-    .colorize-2{
-        h3{
-            color:$second-color; 
-        }
-        a{
-            background-color:$second-color;
-            border:0;
-        }
-    }
-    .colorize-3{
-        h3{
-            color:$third-color; 
-        }
-        a{
-            background-color:$third-color;
-            border:0;
+
+        a {
+            background-color: lighten($first-color, 20%);
+            border: 0;
         }
     }
 
+    .colorize-2 {
+        h3 {
+            color: $second-color;
+        }
+
+        a {
+            background-color: $second-color;
+            border: 0;
+        }
+    }
+
+    .colorize-3 {
+        h3 {
+            color: $third-color;
+        }
+
+        a {
+            background-color: $third-color;
+            border: 0;
+        }
+    }
 }
 
-.matricula{
+.matricula {
     position: relative;
     float: left;
     width: 100%;
-    color:$header-font-color;
+    color: $header-font-color;
     background-image: url("../images/bg-castelinho.png");
-    
-        h3{
-           
-            font-size: 26px;
-            margin-top: 20px;
-        }
-        p{
-        margin:20px 0px 5px 20px;
-        }
-        ul{
-            display: inline-block;
-            li{
-                list-style: none;
-            
-                i{
-                   margin-right: 10px;
-                }
+
+    h3 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    p {
+        margin: 20px 0px 5px 20px;
+    }
+
+    ul {
+        display: inline-block;
+
+        li {
+            list-style: none;
+
+            i {
+                margin-right: 10px;
             }
         }
-        a{
-        margin:2% 35%;
+    }
+
+    a {
+        margin: 2% 35%;
         width: 30%;
         background-color: transparent;
         border: solid #fff;
 
-             &:hover{
-                background-color: rgba($third-color,0.7);
-                border-color:#fff;
-             }
-    
-             i{
-             margin-left:10%;
-         }
-
-
+        &:hover {
+            background-color: rgba($third-color, 0.7);
+            border-color: #fff;
         }
-        
-}  
-.escola{
+
+        i {
+            margin-left: 10%;
+        }
+    }
+}
+
+.escola {
     float: left;
     position: relative;
     width: 100%;
-    h2{        
-        margin: 2% 0;        
-        color:$first-color;
+
+    h2 {
+        margin: 2% 0;
+        color: $first-color;
         text-align: center;
         font-weight: bold;
         font-size: 36px;
     }
+
+    .gallery {
+        img {
+            width: 35%;
+            margin: 0% 5% 5% 5%;
+        }
+
+        a {
+            float: right;
+            margin-right: 10%;
+
+            i {
+                margin-left: 5%;
+            }
+        }
+    }
 }
 
-.newsletter{
+.newsletter {
     float: left;
     position: relative;
     width: 100%;
     background-image: url("../images/bg-inscrevase.png");
-    margin: 5% 0 ;
+    margin: 5% 0;
     padding: 4% 0;
-        h2{
-            color: $header-font-color;
+
+    h2 {
+        color: $header-font-color;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    form {
+        input {
+            height: 48px;
+            border: 0;
+            border-radius: 4px 0 0px 4px;
             font-size: 24px;
-            margin: 0;
         }
-        form{
-            
-            input{
-                height: 48px;
-                border: 0;                
-                border-radius: 4px 0 0px 4px;
-                font-size: 24px;
-                
-                
 
-            }
-            a{
-                border: 0;
-                height: 48px;
-                border-radius: 0 4px 4px 0;
-                background-color: lighten($first-color,20%);
-                    i{
-                        margin-left: 5%;
-                    }
-            }
+        a {
+            border: 0;
+            height: 48px;
+            border-radius: 0 4px 4px 0;
+            background-color: lighten($first-color, 20%);
 
+            i {
+                margin-left: 5%;
+            }
         }
+    }
 }
-.local-contato{
 
-    h2{
-        color:$first-color;
+.local-contato {
+    h2 {
+        color: $first-color;
     }
-    .local-title{
-        color:$third-color;
+
+    .local-title {
+        color: $third-color;
     }
-    p,label{
-        color:#777;
+
+    p, label {
+        color: #777;
     }
-    .formulario{
+
+    .formulario {
         padding-left: 20%;
-        form{
+
+        form {
             margin-top: 10%;
-            input,textarea{
-                background-color:#ececec;
-                
+
+            input, textarea {
+                background-color: #ececec;
             }
-            button{
-                margin-top: 1%;
-                background-color: lighten($first-color,20%);
-                color:$header-font-color;
-                position:relative;
+
+            button {
+                margin-top: 5%;
+                background-color: lighten($first-color, 20%);
+                color: $header-font-color;
+                position: relative;
                 float: right;
                 font-size: 18px;
             }
         }
+    }
+}
+
+.news {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #ececec;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+    h2 {
+        color: $first-color;
+        margin-bottom: 0;
+    }
+
+    p, h4 {
+        color: #777;
+    }
+
+    .media-body {
+        h4 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        a {
+            color: $third-color;
+            padding: 0;
+
+            i {
+                margin-right: 5%;
+            }
+
+            &:hover {
+                color: #777;
+            }
+        }
+    }
+
+    .eventos {
+        .media-list {
+            padding-right: 140px !important;
+
+            li {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 2%;
+    color: $header-font-color;
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: $first-color;
+    border-top: 3px solid red;
+
+    p {
+        padding: 0;
+    }
+
+    img {
+        position: absolute;
+        float: right;
+        right: -35px;
+        bottom: 0px;
+        max-height: auto;
     }
 }
