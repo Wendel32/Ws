@@ -3,9 +3,13 @@
 .turmas{
      background-image: url("../images/bg-turmas.png");
      width: 100%;
+     padding-bottom:20px;
+     .container{
+         padding: 2%;
+     }
     h2{
         &:first-child{
-            margin: 5% 0;
+            margin: 2% 0;
         }
         color:$first-color;
         text-align: center;
@@ -72,3 +76,125 @@
 
 }
 
+.matricula{
+    position: relative;
+    float: left;
+    width: 100%;
+    color:$header-font-color;
+    background-image: url("../images/bg-castelinho.png");
+    
+        h3{
+           
+            font-size: 26px;
+            margin-top: 20px;
+        }
+        p{
+        margin:20px 0px 5px 20px;
+        }
+        ul{
+            display: inline-block;
+            li{
+                list-style: none;
+            
+                i{
+                   margin-right: 10px;
+                }
+            }
+        }
+        a{
+        margin:2% 35%;
+        width: 30%;
+        background-color: transparent;
+        border: solid #fff;
+
+             &:hover{
+                background-color: rgba($third-color,0.7);
+                border-color:#fff;
+             }
+    
+             i{
+             margin-left:10%;
+         }
+
+
+        }
+        
+}  
+.escola{
+    float: left;
+    position: relative;
+    width: 100%;
+    h2{        
+        margin: 2% 0;        
+        color:$first-color;
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+    }
+}
+
+.newsletter{
+    float: left;
+    position: relative;
+    width: 100%;
+    background-image: url("../images/bg-inscrevase.png");
+    margin: 5% 0 ;
+    padding: 4% 0;
+        h2{
+            color: $header-font-color;
+            font-size: 24px;
+            margin: 0;
+        }
+        form{
+            
+            input{
+                height: 48px;
+                border: 0;                
+                border-radius: 4px 0 0px 4px;
+                font-size: 24px;
+                
+                
+
+            }
+            a{
+                border: 0;
+                height: 48px;
+                border-radius: 0 4px 4px 0;
+                background-color: lighten($first-color,20%);
+                    i{
+                        margin-left: 5%;
+                    }
+            }
+
+        }
+}
+.local-contato{
+
+    h2{
+        color:$first-color;
+    }
+    .local-title{
+        color:$third-color;
+    }
+    p,label{
+        color:#777;
+    }
+    .formulario{
+        padding-left: 20%;
+        form{
+            margin-top: 10%;
+            input,textarea{
+                background-color:#ececec;
+                
+            }
+            button{
+                margin-top: 1%;
+                background-color: lighten($first-color,20%);
+                color:$header-font-color;
+                position:relative;
+                float: right;
+                font-size: 18px;
+            }
+        }
+    }
+}
