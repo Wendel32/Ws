@@ -1,0 +1,96 @@
+@import "color";
+
+.logo{
+    padding-left: 3%;
+}
+
+.nav{
+    &-hamburguer {
+        background: $first-font-color;
+        position: relative;
+        z-index: 1000;
+        padding-top: 3%;
+        border-bottom: 3px solid $first-color;
+
+        .logo{
+            i {
+            color:$first-font-color;
+            font-size: 1.5rem;
+            padding: 10px;
+
+                &:hover {
+                    color: #e74c3c;
+                    transition: color 0.3s;
+                }
+            }
+        }
+
+        .main-nav{
+            .hamburger-nav{
+                &:before {
+                    content: "\f0c9";
+                    color: $first-font-color;
+                    font-size: 3rem;
+                    position: absolute;
+                    top: 26px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .menu {
+                display: none;
+                list-style: none;
+                position: absolute;
+                top: 90%;
+                padding-left: 0;
+                width: 100%;
+                overflow: hidden;
+                z-index: 200;
+
+                a {
+                    display: block;
+                    background: $first-color;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 20px;
+                    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+
+                    a li {
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: Montserrat, sans-serif;
+                        font-weight: 300;
+                        font-size: 0.8rem;
+                        letter-spacing: 1px;
+                    }
+
+                    &:hover {
+                        background: white;
+                        transition: background 0.3s ease;
+
+                        li {
+                            color: #c0392b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px){
+    .nav-hamburguer{
+        display: none;
+    }
+
+    .navbar{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+}

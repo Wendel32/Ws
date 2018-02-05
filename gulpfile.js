@@ -56,7 +56,7 @@ gulp.task('html', function() {
 
 // Task to minify images into build
 gulp.task('images', function() {
-	gulp.src('./src/images/*.png')
+	gulp.src('./src/images/**/*.png')
 		.pipe(imagemin({
 			progressive: true,
 		}))

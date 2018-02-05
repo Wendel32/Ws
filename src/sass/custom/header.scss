@@ -5,7 +5,7 @@
         background-color: $first-color;
         width: 100%;
         position: relative;
-        color: $header-font-color;
+        color: $first-font-color;
         padding: 1%;
 
         i, p {
@@ -33,7 +33,7 @@ nav {
             width: 14%;
             text-align: center;
             font-weight: bold;
-                
+
             &:nth-child(4) {
                 padding: 0;
                 width: auto;
@@ -41,8 +41,8 @@ nav {
 
             .btn-default {
                 background-color: lighten($first-color, 20%);
-                color: $header-font-color;
-                width: 100%;
+                color: $first-font-color;
+                width: auto;
                 padding: 4%;
             }
         }
@@ -51,14 +51,15 @@ nav {
 
 .carousel-layout {
     .jumbotron{
-        z-index: 99999;
+        z-index: 100;
         position: absolute;
         background: transparent;
-        color:$header-font-color;
-        left:29%;
-        right: 29%;
+        color:$first-font-color;
         width: 42%;
-        margin-top:7%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
             h1{
                 font-size: 46px;
             }
@@ -78,9 +79,33 @@ nav {
             top: 50%;
             z-index: 9999;
             position: absolute;
-            color: $header-font-color;
+            color: $first-font-color;
             left: 50%;
         }
     }
 }
 
+@media (max-width: 991px){
+    nav {
+        ul {
+            li {
+                width: 16%;
+            }
+        }
+    }
+
+    .carousel-layout{
+        .jumbotron{
+            h1{
+                font-size: 25px;
+            }
+
+            p{
+                max-width: 43ch;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

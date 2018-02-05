@@ -1,5 +1,5 @@
 @import "color";
-
+@import "buttons";
 .turmas {
     background-image: url("../images/bg-turmas.png");
     width: 100%;
@@ -35,7 +35,7 @@
         padding: 4px 75px;
 
         p {
-            color: #777;
+            color: $second-font-color;
         }
 
         i {
@@ -89,7 +89,7 @@
     position: relative;
     float: left;
     width: 100%;
-    color: $header-font-color;
+    color: $first-font-color;
     background-image: url("../images/bg-castelinho.png");
 
     h3 {
@@ -105,6 +105,7 @@
         display: inline-block;
 
         li {
+            color:$first-font-color;
             list-style: none;
 
             i {
@@ -114,18 +115,21 @@
     }
 
     a {
-        margin: 2% 35%;
-        width: 30%;
+        margin: 2% auto;
+        width: auto;
         background-color: transparent;
-        border: solid #fff;
+        border: solid $first-font-color;
+        color: $first-font-color;
 
-        &:hover {
+
+        &:hover, {
             background-color: rgba($third-color, 0.7);
-            border-color: #fff;
+            border-color: $first-font-color;
+            color:$first-font-color;
         }
 
         i {
-            margin-left: 10%;
+            margin: 0 5%;
         }
     }
 }
@@ -169,7 +173,7 @@
     padding: 4% 0;
 
     h2 {
-        color: $header-font-color;
+        color: $first-font-color;
         font-size: 24px;
         margin: 0;
     }
@@ -180,6 +184,7 @@
             border: 0;
             border-radius: 4px 0 0px 4px;
             font-size: 24px;
+            float: left;
         }
 
         a {
@@ -187,6 +192,8 @@
             height: 48px;
             border-radius: 0 4px 4px 0;
             background-color: lighten($first-color, 20%);
+            float: left;
+            width: auto;
 
             i {
                 margin-left: 5%;
@@ -205,7 +212,7 @@
     }
 
     p, label {
-        color: #777;
+        color: $second-font-color;
     }
 
     .formulario {
@@ -221,10 +228,11 @@
             button {
                 margin-top: 5%;
                 background-color: lighten($first-color, 20%);
-                color: $header-font-color;
+                color: $first-font-color;
                 position: relative;
                 float: right;
                 font-size: 18px;
+                width: auto;
             }
         }
     }
@@ -245,7 +253,7 @@
     }
 
     p, h4 {
-        color: #777;
+        color: $second-font-color;
     }
 
     .media-body {
@@ -269,14 +277,14 @@
             }
 
             &:hover {
-                color: #777;
+                color: $second-font-color;
             }
         }
     }
 
     .eventos {
         .media-list {
-            padding-right: 140px !important;
+            padding-right: 140px;
 
             li {
                 margin-bottom: 25px;
@@ -287,7 +295,7 @@
 
 footer {
     padding-top: 2%;
-    color: $header-font-color;
+    color: $first-font-color;
     position: relative;
     float: left;
     width: 100%;
@@ -296,13 +304,64 @@ footer {
 
     p {
         padding: 0;
+
+
     }
 
     img {
         position: absolute;
         float: right;
-        right: -35px;
+        right: 0;
         bottom: 0px;
-        max-height: auto;
     }
+}
+
+@media (max-width: 360px){
+    footer{
+        img{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .escola{
+        .gallery{
+            img{
+                width: 14%;
+                margin-top: 2%;
+            }
+        }
+    }
+
+    .newsletter{
+        text-align: center;
+    }
+
+    .local-contato{
+        .formulario{
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: center;
+        }
+    }
+
+    .news{
+        .eventos{
+            .media-list{
+                    padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .facebook{
+        text-align: center;
+
+        iframe{
+            height: 200px;
+        }
+    }
+
 }
