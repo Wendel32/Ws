@@ -6,30 +6,17 @@
 
 .nav{
     &-hamburguer {
-        background: $first-font-color;
+        background: $basic-color;
         position: relative;
         z-index: 1000;
         padding-top: 3%;
         border-bottom: 3px solid $first-color;
 
-        .logo{
-            i {
-            color:$first-font-color;
-            font-size: 1.5rem;
-            padding: 10px;
-
-                &:hover {
-                    color: #e74c3c;
-                    transition: color 0.3s;
-                }
-            }
-        }
-
         .main-nav{
             .hamburger-nav{
                 &:before {
                     content: "\f0c9";
-                    color: $first-font-color;
+                    color: $first-color;
                     font-size: 3rem;
                     position: absolute;
                     top: 26px;
@@ -50,14 +37,14 @@
 
                 a {
                     display: block;
-                    background: $first-color;
+                    background: $basic-color;
                     text-decoration: none;
                     text-align: center;
                     padding: 20px;
-                    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+                    border-bottom: 0.5px solid $first-color;
 
                     a li {
-                        color: white;
+                        color: $basic-color;
                         text-transform: uppercase;
                         font-family: Montserrat, sans-serif;
                         font-weight: 300;
@@ -66,12 +53,8 @@
                     }
 
                     &:hover {
-                        background: white;
+                        background: $basic-color;
                         transition: background 0.3s ease;
-
-                        li {
-                            color: #c0392b;
-                        }
                     }
                 }
             }

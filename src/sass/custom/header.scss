@@ -5,7 +5,7 @@
         background-color: $first-color;
         width: 100%;
         position: relative;
-        color: $first-font-color;
+        color: $basic-color;
         padding: 1%;
 
         i, p {
@@ -41,7 +41,7 @@ nav {
 
             .btn-default {
                 background-color: lighten($first-color, 20%);
-                color: $first-font-color;
+                color: $basic-color;
                 width: auto;
                 padding: 4%;
             }
@@ -54,7 +54,7 @@ nav {
         z-index: 100;
         position: absolute;
         background: transparent;
-        color:$first-font-color;
+        color:$basic-color;
         width: 42%;
         left: 50%;
         top: 50%;
@@ -79,7 +79,7 @@ nav {
             top: 50%;
             z-index: 9999;
             position: absolute;
-            color: $first-font-color;
+            color: $basic-color;
             left: 50%;
         }
     }
@@ -89,7 +89,11 @@ nav {
     nav {
         ul {
             li {
-                width: 16%;
+                width: 15%;
+
+                &:last-child{
+                    width: 5%;
+                }
             }
         }
     }
@@ -106,6 +110,14 @@ nav {
                 text-overflow: ellipsis;
                 white-space: nowrap;
             }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-layout{
+        .btn{
+            display: none;
         }
     }
 }

@@ -27,6 +27,12 @@ body {
             }
         }
 
+        .form-inline{
+            .form-control{
+                width: 60%;
+            }
+        }
+
         .carousel{
             &-indicators {
                 li {
@@ -58,10 +64,6 @@ body {
                 .form{
                     &-group{
                         margin-top: 1%;
-                    }
-
-                    &-control{
-                        width: auto;
                     }
                 }
             }

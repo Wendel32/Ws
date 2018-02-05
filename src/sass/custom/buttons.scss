@@ -8,27 +8,55 @@
     color: $button-font-color;
 }
 
-.button-primary{
-    @include button-default(lighten($first-color,20%),$first-font-color);
+.button{
+    &-primary{
+        @include button-default(lighten($first-color,20%),$basic-color);
 
-    &:hover{
-        background-color:$first-color;
-        color: $first-font-color;
+        &:hover{
+            background-color:$first-color;
+            color: $basic-color;
+        }
+    }
+
+    &-secondary{
+        @include button-default($second-color,$basic-color);
+
+        &:hover{
+            background-color:$second-color;
+            color: $basic-color;
+        }
+    }
+
+    &-tertiary{
+        @include button-default($third-color,$basic-color);
+
+        &:hover{
+            background-color:$third-color;
+            color: $basic-color;
+        }
+    }
+
+    &-signin{
+        @include button-default(lighten($first-color,20%),$basic-color);
+        display: none;
+        width: 100%;
+
+        &:hover{
+            background-color:$first-color;
+            color: $basic-color;
+        }
     }
 }
 
-.button-secondary{
-    @include button-default($second-color,$first-font-color);
-    &:hover{
-        background-color:$second-color;
-        color: $first-font-color;
+@media (max-width: 992px){
+    .navbar{
+        .button-primary{
+            display: none;
+        }
     }
-}
 
-.buton-tertiary{
-    @include button-default($third-color,$first-font-color);
-    &:hover{
-        background-color:$third-color;
-        color: $first-font-color;
+    .button-signin{
+        display: block;
     }
+
 }

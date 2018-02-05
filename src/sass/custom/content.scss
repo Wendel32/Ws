@@ -1,5 +1,6 @@
 @import "color";
 @import "buttons";
+
 .turmas {
     background-image: url("../images/bg-turmas.png");
     width: 100%;
@@ -20,8 +21,8 @@
     }
 
     .cardapio {
-        margin: 0 35%;
-        width: 30%;
+
+        width: auto;
         background-color: lighten($first-color, 20%);
 
         i {
@@ -35,7 +36,7 @@
         padding: 4px 75px;
 
         p {
-            color: $second-font-color;
+            color: $basic-medium-color;
         }
 
         i {
@@ -89,7 +90,7 @@
     position: relative;
     float: left;
     width: 100%;
-    color: $first-font-color;
+    color: $basic-color;
     background-image: url("../images/bg-castelinho.png");
 
     h3 {
@@ -105,7 +106,7 @@
         display: inline-block;
 
         li {
-            color:$first-font-color;
+            color:$basic-color;
             list-style: none;
 
             i {
@@ -118,14 +119,14 @@
         margin: 2% auto;
         width: auto;
         background-color: transparent;
-        border: solid $first-font-color;
-        color: $first-font-color;
+        border: solid $basic-color;
+        color: $basic-color;
 
 
         &:hover, {
             background-color: rgba($third-color, 0.7);
-            border-color: $first-font-color;
-            color:$first-font-color;
+            border-color: $basic-color;
+            color:$basic-color;
         }
 
         i {
@@ -170,10 +171,10 @@
     width: 100%;
     background-image: url("../images/bg-inscrevase.png");
     margin: 5% 0;
-    padding: 4% 0;
+    padding: 1% 0;
 
     h2 {
-        color: $first-font-color;
+        color: $basic-color;
         font-size: 24px;
         margin: 0;
     }
@@ -193,7 +194,7 @@
             border-radius: 0 4px 4px 0;
             background-color: lighten($first-color, 20%);
             float: left;
-            width: auto;
+            width: 40%;
 
             i {
                 margin-left: 5%;
@@ -212,7 +213,7 @@
     }
 
     p, label {
-        color: $second-font-color;
+        color: $basic-medium-color;
     }
 
     .formulario {
@@ -228,7 +229,7 @@
             button {
                 margin-top: 5%;
                 background-color: lighten($first-color, 20%);
-                color: $first-font-color;
+                color: $basic-color;
                 position: relative;
                 float: right;
                 font-size: 18px;
@@ -253,7 +254,7 @@
     }
 
     p, h4 {
-        color: $second-font-color;
+        color: $basic-medium-color;
     }
 
     .media-body {
@@ -277,7 +278,7 @@
             }
 
             &:hover {
-                color: $second-font-color;
+                color: $basic-medium-color;
             }
         }
     }
@@ -295,7 +296,7 @@
 
 footer {
     padding-top: 2%;
-    color: $first-font-color;
+    color: $basic-color;
     position: relative;
     float: left;
     width: 100%;
@@ -355,6 +356,11 @@ footer {
     }
 }
 
+
+.logo-footer{
+        display: block;
+}
+
 @media (max-width: 992px){
     .facebook{
         text-align: center;
@@ -362,6 +368,11 @@ footer {
         iframe{
             height: 200px;
         }
+    }
+
+
+    .logo-footer{
+        display: none;
     }
 
 }
