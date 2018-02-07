@@ -26,7 +26,8 @@
         background-color: lighten($first-color, 20%);
 
         i {
-            margin-left: 10%;
+            margin-left: 5%;
+            padding-right: 20px;
         }
     }
 
@@ -41,10 +42,11 @@
 
         i {
             margin-left: 10%;
+            padding-right: 20px;
         }
 
         a {
-            width: 75%;
+            width: auto;
         }
 
         .icon-center {
@@ -130,7 +132,8 @@
         }
 
         i {
-            margin: 0 5%;
+            margin-left:5%;
+            padding-right: 20px;
         }
     }
 }

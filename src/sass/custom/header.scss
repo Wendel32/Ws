@@ -16,6 +16,7 @@
         .social-icon {
             i {
                 margin: auto 10px auto 10px;
+                color: $basic-color;
             }
         }
     }
@@ -118,6 +119,16 @@ nav {
     .carousel-layout{
         .btn{
             display: none;
+        }
+    }
+}
+@media (max-width: 476px){
+    .carousel-layout{
+        p{
+            display: none;
+        }
+        h1{
+        margin-top: 0;
         }
     }
 }
